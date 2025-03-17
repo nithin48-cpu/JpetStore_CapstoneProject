@@ -1,0 +1,1 @@
+{"uuid":"a97fc397-f00a-4e7a-9b50-78f606ab8b8f","name":"Edge Test","children":[],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1742131931288,"stop":1742131932862}],"afters":[],"start":1742131931235,"stop":1742132279634}
