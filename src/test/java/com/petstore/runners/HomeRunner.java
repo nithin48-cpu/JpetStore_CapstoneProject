@@ -38,19 +38,19 @@ public class HomeRunner extends AbstractTestNGCucumberTests{
 		this.browser=browser;
 		this.url=url;
         
-		
+		//Live Update from Excel Sheet
 		//below code make the run every features multiple times using testdata from the excel sheets dynamically
-//        Map<String, String> featureToExcelMap = new HashMap<>();
-//        featureToExcelMap.put(System.getProperty("user.dir")+"\\src\\test\\resources\\Features\\loginPage.feature", System.getProperty("user.dir")+"\\test-data\\user_login_data.xlsx");
-//        featureToExcelMap.put(System.getProperty("user.dir")+"\\src\\test\\resources\\Features\\registerPage.feature", System.getProperty("user.dir")+"\\test-data\\user_reg_data.xlsx");
-//        featureToExcelMap.put(System.getProperty("user.dir")+"\\src\\test\\resources\\Features\\searchPage.feature", System.getProperty("user.dir")+"\\test-data\\search_data.xlsx");
-//
-//        // Loop through each feature file and update with Excel data
-//        for (Map.Entry<String, String> entry : featureToExcelMap.entrySet()) {
-//            String featurePath = entry.getKey();
-//            String excelPath = entry.getValue();
-//            ExcelReader.updateFeatureFileWithData(excelPath, featurePath);
-//        }
+        Map<String, String> featureToExcelMap = new HashMap<>();
+        featureToExcelMap.put(System.getProperty("user.dir")+"\\src\\test\\resources\\Features\\loginPage.feature", System.getProperty("user.dir")+"\\test-data\\user_login_data.xlsx");
+        featureToExcelMap.put(System.getProperty("user.dir")+"\\src\\test\\resources\\Features\\registerPage.feature", System.getProperty("user.dir")+"\\test-data\\user_reg_data.xlsx");
+        featureToExcelMap.put(System.getProperty("user.dir")+"\\src\\test\\resources\\Features\\searchPage.feature", System.getProperty("user.dir")+"\\test-data\\search_data.xlsx");
+
+        // Loop through each feature file and update with Excel data
+        for (Map.Entry<String, String> entry : featureToExcelMap.entrySet()) {
+            String featurePath = entry.getKey();
+            String excelPath = entry.getValue();
+            ExcelReader.updateFeatureFileWithData(excelPath, featurePath);
+        }
 	}
 
 }
