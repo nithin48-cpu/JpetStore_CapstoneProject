@@ -1,0 +1,7 @@
+com\petstore\pages\LoginPetPage.class
+com\petstore\basepage\BasePage.class
+com\petstore\pages\RegisterPetPage.class
+com\petstore\pages\PricePetPage.class
+com\petstore\pages\SearchPetPage.class
+com\petstore\pages\HomePetPage.class
+com\petstore\pages\ListPetPage.class
